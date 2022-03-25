@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:white;
+    --secondary-color:#091921;
+}
+.lightdark{
+    --primary-color:#091921;
+    --secondary-color:white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+    /* background-color: var(--primary-color); */
+}
+#icon{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -35vh;
+}
+.clock{
+    width: 27vw;
+    height: 60vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/clock.png");
+    background-repeat: no-repeat;
+    background-size: 27vw 60vh;
+    border-radius: 171px;
+    border: black solid 2px;
+    box-shadow: 3px 3px 6px rgb(105, 103, 103),
+    -3px -3px 6px rgb(105, 103, 103);
+}
+#hour, #min, #second{
+   position: absolute;
+    /* position: relative; */
+    border-radius: 8px;
+    
+}
+#hour{
+    width: 4px;
+background: red;
+height: 13vh;
+/* top: -5.5vh; */
+/* left: 4px; */
+opacity: 0.8;
+top: 37.5vh;
+left: 51.5vw;
+transform-origin: bottom;
+
+}
+#min{
+    background: var(--primary-color);
+    height: 17vh;
+    width: 2px;
+    /* top: -45px; */
+    opacity: 0.8;
+    top: 199px;
+left: 51.5vw;
+transform-origin: bottom;
+
+}
+#second{
+    background: var(--primary-color);
+    height: 21vh;
+    width: 1.5px;
+    /* top: -57px; */
+    /* left: -2px; */
+    opacity: 0.8;
+    top: 176px;
+    left: 51.5vw;
+    transform-origin: bottom;
+}
